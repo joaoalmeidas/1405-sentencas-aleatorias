@@ -16,6 +16,7 @@ public class Sentencas {
 			String frase = "";
 			
 			frase += artigo[aleatorio.nextInt(artigo.length)] + " ";
+			frase = frase.substring(0, 1).toUpperCase() + frase.substring(1, frase.length());
 			
 			frase += substantivo[aleatorio.nextInt(substantivo.length)] + " ";
 			
@@ -25,7 +26,8 @@ public class Sentencas {
 			
 			frase += artigo[aleatorio.nextInt(artigo.length)] + " ";
 			
-			frase += substantivo[aleatorio.nextInt(substantivo.length)] + " ";
+			frase += substantivo[aleatorio.nextInt(substantivo.length)] + ".";
+			
 			
 			System.out.println(frase);
 		}
